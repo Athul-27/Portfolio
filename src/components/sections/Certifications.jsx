@@ -18,7 +18,7 @@ export default function Certifications() {
           {certifications.map((c, i) => (
             <Reveal key={c.title} delay={i * 0.1}>
               <div className="card-lift h-full border-2 border-ink bg-surface p-6 shadow-comic">
-                <span className="font-display text-[10px] text-comic-red">CERTIFIED</span>
+                <span className="font-display text-lg tracking-wide text-comic-red">CERTIFIED</span>
                 <h3 className="mt-3 font-heading text-xl font-extrabold text-ink">
                   {c.title}
                 </h3>

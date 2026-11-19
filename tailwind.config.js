@@ -13,17 +13,18 @@ export default {
           blue: '#2F5BEA',
           yellow: '#F5C518',
           green: '#3FA14D',
+          pink: '#FF4FA3',
         },
       },
       fontFamily: {
-        display: ['"Press Start 2P"', 'monospace'],
+        display: ['Bangers', 'cursive'],
         heading: ['"Bricolage Grotesque"', 'sans-serif'],
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
-        comic: '4px 4px 0 0 #15151A',
+        comic: '5px 5px 0 0 #15151A',
         'comic-sm': '3px 3px 0 0 #15151A',
-        'comic-lg': '6px 6px 0 0 #15151A',
+        'comic-lg': '8px 8px 0 0 #15151A',
       },
       maxWidth: {
         content: '1100px',

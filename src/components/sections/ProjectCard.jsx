@@ -1,7 +1,7 @@
 import { Github, ArrowUpRight } from 'lucide-react'
 import Tag from '../ui/Tag'
 import SocialLink from '../ui/SocialLink'
-import PixelPattern from '../ui/PixelPattern'
+import ComicPanel from '../ui/ComicPanel'
 
 const accents = {
   'comic-red': { hex: '#E23A3A', bar: 'bg-comic-red', text: 'text-comic-red' },
@@ -10,22 +10,19 @@ const accents = {
   'comic-green': { hex: '#3FA14D', bar: 'bg-comic-green', text: 'text-comic-green' },
 }
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, number = '01' }) {
   const a = accents[project.accent] || accents['comic-red']
 
   return (
     <article className="card-lift flex h-full flex-col border-2 border-ink bg-surface shadow-comic">
-      <div className={`relative h-36 border-b-2 border-ink ${a.bar}`}>
-        <div className="absolute inset-0 halftone opacity-40" aria-hidden="true" />
-        <PixelPattern
-          seed={project.id}
-          accent="#15151A"
-          className="absolute inset-0 h-full w-full p-5 opacity-90"
-        />
+      <div className={`relative h-36 overflow-hidden border-b-2 border-ink ${a.bar}`}>
+        <ComicPanel number={number} />
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <p className={`font-display text-[9px] ${a.text}`}>{project.subtitle}</p>
+        <p className={`font-heading text-xs font-bold uppercase tracking-wide ${a.text}`}>
+          {project.subtitle}
+        </p>
         <h3 className="mt-2 font-heading text-lg font-extrabold leading-snug text-ink">
           {project.title}
         </h3>

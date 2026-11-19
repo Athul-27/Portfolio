@@ -39,7 +39,7 @@ export default function About() {
           <Reveal delay={0.1}>
             <div className="border-2 border-ink bg-surface shadow-comic">
               <div className="halftone border-b-2 border-ink px-5 py-3">
-                <span className="font-display text-[10px] text-ink">AT A GLANCE</span>
+                <span className="font-display text-lg tracking-wide text-ink">AT A GLANCE</span>
               </div>
               <div className="space-y-5 p-5">
                 <div>

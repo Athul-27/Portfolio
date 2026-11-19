@@ -38,7 +38,7 @@ export default function Contact() {
               </div>
 
               <div className="border-2 border-ink bg-paper p-5">
-                <p className="mb-4 font-display text-[10px] text-ink">ELSEWHERE</p>
+                <p className="mb-4 font-display text-lg tracking-wide text-ink">ELSEWHERE</p>
                 <div className="flex flex-col gap-3">
                   <SocialLink
                     href={siteConfig.links.github}
