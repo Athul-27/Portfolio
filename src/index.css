@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+  }
+
+  ::selection {
+    @apply bg-comic-yellow text-ink;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-ink ring-offset-2 ring-offset-paper;
+  }
+
+  section {
+    scroll-margin-top: 90px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+@layer components {
+  .halftone {
+    background-image: radial-gradient(rgba(21, 21, 26, 0.14) 1px, transparent 1.4px);
+    background-size: 13px 13px;
+  }
+
+  .pixel-grid {
+    background-image:
+      linear-gradient(to right, rgba(21, 21, 26, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(21, 21, 26, 0.05) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Blocky comic button that presses into its own shadow on click */
+  .comic-press {
+    @apply transition-[transform,box-shadow] duration-100;
+  }
+  .comic-press:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0 0 0 0 #15151a;
+  }
+
+  .card-lift {
+    @apply transition-[transform,box-shadow] duration-200;
+  }
+  .card-lift:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0 0 #15151a;
+  }
+}
