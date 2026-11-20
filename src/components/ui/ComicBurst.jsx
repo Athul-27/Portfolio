@@ -1,6 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
-function starPoints({ spikes = 14, outer = 96, inner = 72, cx = 100, cy = 100 }) {
+function starPoints({ spikes = 14, outer = 96, inner = 72, cx = 100, cy = 100 } = {}) {
   const pts = []
   const step = Math.PI / spikes
   let rot = -Math.PI / 2

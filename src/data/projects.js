@@ -60,7 +60,7 @@ export const projects = [
       'Recruitment and reporting modules behind JWT auth.',
     ],
     tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JWT'],
-    repo: '',
+    repo: 'https://github.com/Athul-27/HRMS-project',
     demo: '',
   },
 ]

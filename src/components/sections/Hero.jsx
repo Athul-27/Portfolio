@@ -89,13 +89,13 @@ export default function Hero() {
               <SocialLink
                 href={siteConfig.links.github}
                 label="GitHub"
-                variant="secondary"
+                variant="github"
                 icon={<Github size={16} />}
               />
               <SocialLink
                 href={siteConfig.links.linkedin}
                 label="LinkedIn"
-                variant="secondary"
+                variant="linkedin"
                 icon={<Linkedin size={16} />}
               />
             </motion.div>

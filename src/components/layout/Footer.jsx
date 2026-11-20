@@ -43,13 +43,12 @@ export default function Footer() {
           <div className="flex items-center gap-5 text-ink">
             <Social href={siteConfig.links.email || `mailto:${siteConfig.email}`} label="Email" icon={<Mail size={18} />} />
             <Social href={siteConfig.links.github} label="GitHub" icon={<Github size={18} />} />
-            <Social href={siteConfig.links.linkedin} label="LinkedIn" icon={<Linkedin size={18} />} />
+            <Social href={siteConfig.links.linkedin} label="LinkedIn" icon={<Linkedin size={18} className="text-[#0A66C2]" />} />
           </div>
         </div>
 
         <div className="flex flex-col gap-2 border-t-2 border-ink py-5 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>© {year} {siteConfig.name}. All rights reserved.</p>
-          <p>Built with React, Vite &amp; Tailwind CSS.</p>
         </div>
       </Container>
     </footer>

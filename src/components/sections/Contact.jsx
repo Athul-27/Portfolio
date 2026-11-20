@@ -43,11 +43,13 @@ export default function Contact() {
                   <SocialLink
                     href={siteConfig.links.github}
                     label="GitHub"
+                    variant="github"
                     icon={<Github size={16} />}
                   />
                   <SocialLink
                     href={siteConfig.links.linkedin}
                     label="LinkedIn"
+                    variant="linkedin"
                     icon={<Linkedin size={16} />}
                   />
                 </div>

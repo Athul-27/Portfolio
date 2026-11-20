@@ -10,9 +10,9 @@ export const siteConfig = {
   // Drop in the real URLs here and the UI (Navbar, Hero, Contact, Footer)
   // will automatically turn the corresponding buttons into live links.
   links: {
-    github: '',
-    linkedin: '',
-    resume: '',
+    github: 'https://github.com/Athul-27',
+    linkedin: 'https://www.linkedin.com/in/athul-s-0b42bb226',
+    resume: 'https://drive.google.com/file/d/1bTv1OpsGmAxWHPJoEgH_ZBKYSvT5dYsc/view?usp=sharing',
   },
 
   nav: [

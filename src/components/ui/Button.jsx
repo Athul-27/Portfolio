@@ -6,6 +6,8 @@ const variants = {
   accent: 'bg-comic-blue text-surface',
   yellow: 'bg-comic-yellow text-ink',
   secondary: 'bg-surface text-ink',
+  github: 'bg-ink text-surface',
+  linkedin: 'bg-[#0A66C2] text-surface',
 }
 
 export default function Button({
